@@ -1,13 +1,13 @@
 {% set name = "set-calibration" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/set-calibration-{{ version }}.tar.gz
-  sha256: 7b36e4aad0248e0fdcc00c1e550f8b3c1b6688d7816781c7b5ef43a1c513f7eb
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f9064261af306176a2e731d34d661921ac6ec21ed86a5da6df838a1d78b4a294
 
 build:
   noarch: python
